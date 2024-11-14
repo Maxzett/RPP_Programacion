@@ -25,7 +25,13 @@ opcion = input('Ingrese una opcion: ')
 match opcion:
     
     case '1':
-        pass
+        matriz = inicializar_matriz(len(depositos), len(equipos))
+        
+        for i in range(len(depositos)):
+            for j in range(len(equipos)):
+                
+                stock = int(input(f'Ingrese el stock de {equipos[j]} en {depositos[i]}'))
+                matriz[i][j] = stock
 
     case '2':
         totales_por_deposito = calcular_totales(matriz_prueba, 2)

@@ -1,11 +1,15 @@
 
 def inicializar_matriz(filas: int, col: int, elemento: any = 0):
     
-    filas = [[0] * col]
-    
-    for filas in range(len(filas)):    
-        pass
+    matriz = []
 
+    for i in range(len(filas)):
+        fila = [0] * col
+
+        matriz += [fila]
+        
+    return matriz
+             
 
 def calcular_totales(matriz: list, opcion: int) -> list:
     
